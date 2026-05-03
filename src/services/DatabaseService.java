@@ -5,8 +5,8 @@ import java.sql.DriverManager;
 
 public class DatabaseService {
     private static final String URL = "jdbc:mysql://localhost:3306/mylibrarydb";
-    private static final String USER = "root";
-    private static final String PASS = "";
+    private static final String USER = "javauser";
+    private static final String PASS = "1234";
 
     public static Connection getConnection() {
         try {
