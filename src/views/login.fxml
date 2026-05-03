@@ -1,0 +1,5 @@
+<VBox spacing="10" alignment="CENTER" xmlns:fx="http://javafx.com/fxml" fx:controller="controllers.LoginController">
+    <TextField fx:id="username" promptText="Username"/>
+    <PasswordField fx:id="password" promptText="Password"/>
+    <Button text="Login" onAction="#handleLogin"/>
+</VBox>
