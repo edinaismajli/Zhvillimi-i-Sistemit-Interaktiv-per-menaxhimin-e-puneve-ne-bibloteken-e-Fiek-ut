@@ -1,0 +1,12 @@
+<VBox spacing="10" alignment="CENTER" xmlns:fx="http://javafx.com/fxml" fx:controller="controllers.MainController">
+
+    <TextField fx:id="title" promptText="Book Title"/>
+    <TextField fx:id="author" promptText="Author"/>
+    <Button text="Add Book" onAction="#addBook"/>
+
+    <TextField fx:id="deleteId" promptText="Book ID"/>
+    <Button text="Delete Book" onAction="#deleteBook"/>
+
+    <Button text="Execute Example" onAction="#executeCustom"/>
+
+</VBox>
