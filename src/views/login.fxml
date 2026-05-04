@@ -1,5 +1,17 @@
-<VBox spacing="10" alignment="CENTER" xmlns:fx="http://javafx.com/fxml" fx:controller="controllers.LoginController">
-    <TextField fx:id="username" promptText="Username"/>
-    <PasswordField fx:id="password" promptText="Password"/>
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.control.PasswordField?>
+
+<VBox spacing="10" alignment="CENTER"
+      xmlns="http://javafx.com/javafx"
+      xmlns:fx="http://javafx.com/fxml"
+      fx:controller="controllers.LoginController">
+
+    <TextField fx:id="txtUsername" promptText="Username" />
+    <PasswordField fx:id="txtPassword" promptText="Password" />
     <Button text="Login" onAction="#handleLogin"/>
+
 </VBox>
