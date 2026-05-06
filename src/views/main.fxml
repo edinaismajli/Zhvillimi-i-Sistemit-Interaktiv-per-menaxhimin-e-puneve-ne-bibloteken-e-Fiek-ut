@@ -1,10 +1,22 @@
-<VBox spacing="10" alignment="CENTER" xmlns:fx="http://javafx.com/fxml" fx:controller="controllers.MainController">
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.control.Button?>
+
+<VBox spacing="10" alignment="CENTER"
+      xmlns="http://javafx.com/javafx"
+      xmlns:fx="http://javafx.com/fxml"
+      fx:controller="controllers.MainController">
 
     <TextField fx:id="title" promptText="Book Title"/>
+
     <TextField fx:id="author" promptText="Author"/>
+
     <Button text="Add Book" onAction="#addBook"/>
 
     <TextField fx:id="deleteId" promptText="Book ID"/>
+
     <Button text="Delete Book" onAction="#deleteBook"/>
 
     <Button text="Execute Example" onAction="#executeCustom"/>
