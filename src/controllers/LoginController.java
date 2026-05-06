@@ -1,4 +1,4 @@
-package controllers;
+﻿package controllers;
 
 import javafx.fxml.FXML;
 import javafx.fxml.FXMLLoader;
@@ -11,15 +11,15 @@ import javafx.stage.Stage;
 public class LoginController {
 
     @FXML
-    private TextField username;
+    private TextField txtUsername;
 
     @FXML
-    private PasswordField password;
+    private PasswordField txtPassword;
 
     @FXML
     public void handleLogin() {
-        String user = username.getText().trim();
-        String pass = password.getText();
+        String user = txtUsername.getText().trim();
+        String pass = txtPassword.getText();
 
         if (user.isEmpty() || pass.isEmpty()) {
             showAlert("Gabim", "Ploteso username dhe password.");
@@ -42,12 +42,12 @@ public class LoginController {
             FXMLLoader loader = new FXMLLoader(getClass().getResource("/views/main.fxml"));
             Scene scene = new Scene(loader.load());
 
-            Stage stage = (Stage) username.getScene().getWindow();
+            Stage stage = (Stage) txtUsername.getScene().getWindow();
             stage.setScene(scene);
             stage.setTitle("Main Page");
             stage.show();
         } catch (Exception e) {
-            e.printStackTrace();
+            System.err.println("Nuk u hap faqja kryesore: " + e.getMessage());
             showAlert("Error", "Nuk u hap faqja kryesore.");
         }
     }
@@ -60,3 +60,4 @@ public class LoginController {
         alert.showAndWait();
     }
 }
+
